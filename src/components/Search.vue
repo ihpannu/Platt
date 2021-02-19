@@ -55,7 +55,7 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import usePlanets from "@/hooks/usePlanets";
-import { Planet } from "@/types";
+import { Planet } from "@/hooks/usePlanets";
 import { debounce } from "throttle-debounce";
 
 export default defineComponent({
