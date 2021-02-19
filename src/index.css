@@ -1,0 +1,68 @@
+:root {
+  --primary-text-color: #000000;
+  --primary-color: #268833;
+  --primary-bg: #eeeeee;
+  --white: #ffffff;
+  --primary-gray: #666666;
+  --primary-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 1rem;
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  transition: all 200ms ease-in;
+}
+
+a,
+p,
+input,
+li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  transition: all 200ms ease-in;
+  font-weight: 300;
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+  h6 {
+    @apply text-lg;
+  }
+}
